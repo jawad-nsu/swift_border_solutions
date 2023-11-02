@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import axios, { AxiosResponse } from 'axios';
 import {
   ColumnDef,
   ColumnFiltersState,
@@ -15,6 +16,7 @@ import {
 } from '@tanstack/react-table';
 import { ArrowUpDown, ChevronDown, MoreHorizontal } from 'lucide-react';
 
+// Shadcn-ui
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 import {
@@ -37,6 +39,9 @@ import {
 } from '@/components/ui/table';
 import { DataTablePagination } from './data-table-pagination';
 
+// Hooks
+import { useCompanyData } from '@/hooks/useCompanyData';
+import { METHODS, fetchAPI } from '@/backend/common';
 const data: Payment[] = [
   {
     id: 'm5gr84i9',
@@ -171,6 +176,25 @@ export function DataTable() {
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({});
   const [rowSelection, setRowSelection] = useState({});
 
+  const symbols = ['AAPL', 'GOOGL', 'MSFT']; // Add more symbols as needed
+  const { companies, error } = useCompanyData(symbols);
+  console.log('company', companies);
+  /* Start */
+  // const [companies, setCompanies] = useState<AxiosResponse | null | void>();
+  // useEffect(() => {
+  //   (async () => {
+  //     const res = await fetchAPI(
+  //       '/query?function=OVERVIEW&symbol=IBM&apikey=R8IRLTF9GHO48UTX',
+  //       METHODS.get
+  //     );
+  //     setCompanies(res);
+  //   })();
+  // }, []);
+
+  // console.log('companies', companies);
+
+  /* End */
+
   const table = useReactTable({
     data,
     columns,
@@ -248,6 +272,7 @@ export function DataTable() {
               </TableRow>
             ))}
           </TableHeader>
+          {/* {error && <p>Error: {error}</p>} */}
           <TableBody>
             {table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (
