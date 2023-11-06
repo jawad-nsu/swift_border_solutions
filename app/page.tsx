@@ -1,10 +1,19 @@
-import Navbar from '@/components/homepage/navbar';
-import Image from 'next/image';
+import {
+  Navbar,
+  Hero,
+  About,
+  Explore,
+  GetStarted,
+} from '@/components/homepage';
 
 export default function Home() {
   return (
-    <main className='bg-background-black'>
+    <div className='bg-primary-black overflow-hidden'>
       <Navbar />
-    </main>
+      <Hero />
+      <About />
+      <Explore />
+      <GetStarted />
+    </div>
   );
 }
