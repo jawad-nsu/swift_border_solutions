@@ -1,4 +1,4 @@
-export const GetStarted = () => {
+const GetStarted = () => {
   return <div>GetStarted</div>;
 };
 
