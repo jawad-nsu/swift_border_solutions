@@ -1,4 +1,4 @@
-export const Feedback = () => {
+const Feedback = () => {
   return <div>Feedback</div>;
 };
 
