@@ -16,7 +16,7 @@ const Explore = () => {
   const [active, setActive] = useState('planet-2');
 
   return (
-    <section className={`${styles.paddings} mx-5 md:mx-24`}>
+    <section className={`${styles.paddings} mx-5 md:mx-20`}>
       <motion.div
         variants={staggerContainer}
         initial='hidden'
