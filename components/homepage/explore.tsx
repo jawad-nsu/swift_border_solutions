@@ -16,13 +16,13 @@ const Explore = () => {
   const [active, setActive] = useState('planet-2');
 
   return (
-    <section className={`${styles.paddings}`}>
+    <section className={`${styles.paddings} mx-5 md:mx-24`}>
       <motion.div
         variants={staggerContainer}
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}
+        className={`${styles.innerWidth}flex flex-col`}
       >
         <TitleText
           title={
