@@ -11,7 +11,7 @@ import NewFeatures from './new_features';
 
 const WhatsNew = () => {
   return (
-    <section className={`${styles.paddings} mx-5 md:mx-20`}>
+    <section className={`${styles.paddings} mx-5 md:mx-24 relative z-10`}>
       <motion.div
         variants={staggerContainer}
         initial='hidden'
