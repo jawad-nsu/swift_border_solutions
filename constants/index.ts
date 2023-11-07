@@ -31,3 +31,18 @@ export const startingFeatures = [
   'Filter, Pagniate, Sort the data you want to see',
   'No need to sign up or sign in, just visit site and have fun',
 ];
+
+export const newFeatures = [
+  {
+    imgUrl: '/vrpano.svg',
+    title: 'A new world',
+    subtitle:
+      'we have the latest update from the NASA API, making sure you get the latest news ahead of everyone else',
+  },
+  {
+    imgUrl: '/headset.svg',
+    title: 'More realistic',
+    subtitle:
+      'In the latest version, the pictures are high resolution, making the experience more realistic',
+  },
+];
