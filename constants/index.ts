@@ -25,3 +25,9 @@ export const explorePlanets = [
     title: 'Hawkins Labs',
   },
 ];
+
+export const startingFeatures = [
+  'Find a world that suits you and you want to enter',
+  'Filter, Pagniate, Sort the data you want to see',
+  'No need to sign up or sign in, just visit site and have fun',
+];
