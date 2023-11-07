@@ -46,3 +46,24 @@ export const newFeatures = [
       'In the latest version, the pictures are high resolution, making the experience more realistic',
   },
 ];
+
+export const insights = [
+  {
+    imgUrl: '/planet-06.png',
+    title: 'NASA Astronauts to Speak with Tennessee Students',
+    subtitle:
+      'Students from Brighton Elementary School in Brighton, Tennessee, will have an opportunity this week to hear from NASA and ESA astronauts',
+  },
+  {
+    imgUrl: '/planet-07.png',
+    title: 'Richard Danne receives NASA’s Exceptional Achievement Medal',
+    subtitle:
+      'Bob Cabana presented an award to Richard Danne Monday for his outstanding achievement in creating the NASA worm logotype',
+  },
+  {
+    imgUrl: '/planet-06.png',
+    title: 'NASA Invites Media to First Astrobotic',
+    subtitle:
+      'Media accreditation is open for the first United States commercial robotic flight to the Moon’s surface as part of NASA’s CLPS initiative and Artemis program.',
+  },
+];
