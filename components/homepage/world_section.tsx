@@ -1,5 +1,5 @@
 const World = () => {
-  return <div>World</div>;
+  return <div className='invisible'>World</div>;
 };
 
 export default World;
