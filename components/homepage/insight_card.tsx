@@ -35,7 +35,7 @@ const InsightCard: React.FC<InsightCardProps> = ({
             {title}
           </h4>
           {/* subtitle */}
-          <p className='mt-[16px] font-normal text-[14px] lg:text-[20px] text-secondary-white'>
+          <p className='mt-[16px] font-normal text-[14px] text-white lg:text-[20px] text-secondary-white'>
             {subtitle}
           </p>
         </div>
