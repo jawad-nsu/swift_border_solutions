@@ -11,6 +11,7 @@ import { explorePlanets } from '@/constants';
 import ExploreCard from '@/components/common/explore_card';
 import { TitleText } from '@/components/common/title_text';
 import { staggerContainer } from '@/lib/motion';
+import { AnimatedText } from '@/components/common/animated_text';
 
 const Explore = () => {
   const [active, setActive] = useState('planet-2');
@@ -24,6 +25,11 @@ const Explore = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth}flex flex-col`}
       >
+        <AnimatedText
+          text={['| The World']}
+          className='text-center text-white'
+          repeatDelay={100}
+        />
         <TitleText
           title={
             <>
