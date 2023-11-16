@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 import styles from '@/styles';
-import { AnimatedText } from '../common/animated_text';
+import { AnimatedText } from '@/components/common/animated_text';
 import { fadeIn } from '@/lib/motion';
 
 const About = () => {
@@ -15,13 +15,13 @@ const About = () => {
       >
         <AnimatedText
           text={['| About PlanetPilot']}
-          className='text-center'
+          className='text-center text-white'
           repeatDelay={100}
         />
 
         <motion.p
           variants={fadeIn('up', 'tween', 0.2, 1)}
-          className='mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white'
+          className='mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-white'
         >
           Embark on a cosmic journey with{' '}
           <span className='font-extrabold text-white'>PlanetPilot</span>, your
