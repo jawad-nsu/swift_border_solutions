@@ -4,12 +4,13 @@ import { motion } from 'framer-motion';
 
 import styles from '@/styles';
 import { AnimatedText } from '../common/animated_text';
-import { slideIn } from '@/lib/motion';
+import { slideIn, staggerContainer } from '@/lib/motion';
 
 const Hero = () => {
   return (
     <section className={`${styles.yPaddings} sm:pt-12 md:pt-20`}>
       <motion.div
+        variants={staggerContainer}
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
@@ -20,13 +21,13 @@ const Hero = () => {
             <AnimatedText
               el='h1'
               text={['celestial']}
-              className='font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase z-10'
+              className='font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] text-white lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase z-10'
               repeatDelay={1400}
             />
             <AnimatedText
               el='h1'
               text={['NAVIGATOR']}
-              className='font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase z-10'
+              className='font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] text-white lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase z-10'
               repeatDelay={2500}
             />
           </section>
