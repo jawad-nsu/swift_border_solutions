@@ -8,11 +8,12 @@ import {
   World,
   Insights,
   Feedback,
+  Footer,
 } from '@/components/homepage';
 
 export default function Home() {
   return (
-    <div className='bg-primary-black overflow-hidden'>
+    <div className='bg-[#20242c] overflow-hidden'>
       <Navbar />
       <Hero />
       <div className='relative'>
@@ -20,7 +21,7 @@ export default function Home() {
         <div className='gradient-03 z-0' />
         <Explore />
       </div>
-      <div>
+      <div className='relative'>
         <GetStarted />
         <div className='gradient-04 z-0' />
         <WhatsNew />
@@ -31,6 +32,7 @@ export default function Home() {
         <div className='gradient-04 z-0' />
         <Feedback />
       </div>
+      <Footer />
     </div>
   );
 }
