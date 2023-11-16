@@ -67,3 +67,22 @@ export const insights = [
       'Media accreditation is open for the first United States commercial robotic flight to the Moon’s surface as part of NASA’s CLPS initiative and Artemis program.',
   },
 ];
+
+export const socials = [
+  {
+    name: 'twitter',
+    url: '/twitter.svg',
+  },
+  {
+    name: 'linkedIn',
+    url: '/linkedIn.svg',
+  },
+  {
+    name: 'instagram',
+    url: '/instagram.svg',
+  },
+  {
+    name: 'facebook',
+    url: '/facebook.svg',
+  },
+];
