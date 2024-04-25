@@ -1,6 +1,9 @@
+import { getNeoWs } from '@/backend/NeoWs';
 import DataTable from '@/components/data-table';
 
 const pages = () => {
+  const data = getNeoWs();
+  console.log(data);
   return (
     <section>
       <h1>This is dashboard page</h1>
